@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('assets/fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font‑display: swap;
+}
+  
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('assets/fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font‑display: swap;
+}
+  
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('assets/fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font‑display: swap;
+}
+  
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('assets/fonts/TTLakes-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font‑display: swap;
+}
+
+html {
+    
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    width: 320px;
+    margin-right: auto;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    padding-bottom: 24px;
+}
+
+.panel__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 23px;
+}
+
+.panel__left-header {
+    display: flex;
+    align-items: center;
+}
+
+.panel__right-header {
+    display: flex;
+    align-items: center;    
+}
+
+.header__btn--close {
+    background: #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+}
+
+
+.header__btn--search {
+    background: #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.header__btn--logo {
+    height: 51px;
+    width: 97px;
+}
+
+.header__icon--close {
+    transform: translateY(2px);
+}
+
+.main__item {
+    margin-bottom: 32px;
+    vertical-align: middle;
+}
+
+.main__link {
+    text-decoration: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    display: inline-block;
+    transform: translateY(2px);
+    transition-duration: 1s;
+    transition-property: color;
+}
+
+.main__link:hover,
+.main__item:hover::before {
+    color: #7E7E82;
+    opacity: 1;
+}
+
+.main__item:last-child {
+    margin-bottom: 268px;
+}
+
+.main__item::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    border-radius: 0px 3px 3px 0;
+    position: relative;
+    margin-right: 20px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.footer {
+    margin-left: 24px;
+}
+
+.footer__icon-masseger {
+    margin-bottom: 16px;
+}
+
+.footer__btn--call {
+    background: #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.footer__btn--chat {
+    background: #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.footer__btn__profile {
+    background: #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer__icon {
+    vertical-align: middle;
+}
+
+.footer__mail {
+    margin-bottom: 12px;
+}
+
+.footer__mail-link {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer__number-link {
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer__number {
+    margin-bottom: 40px;
+}
+
+.footer__list-language {
+    display: flex;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.footer__link {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.footer__link:hover {
+    color: #7E7E82;
+}
